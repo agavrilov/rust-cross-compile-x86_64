@@ -1,4 +1,4 @@
-FROM agavrilov01/cross-compile_x86_64
+FROM agavrilov01/cross-compile-x86_64
 
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
