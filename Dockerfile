@@ -6,7 +6,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 
 # Install necessary components
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ca-certificates curl llvm-devel && \
+    apt-get install -y --no-install-recommends ca-certificates curl llvm-dev && \
     apt-get clean
 
 # Install Rust
