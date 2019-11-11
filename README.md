@@ -1,6 +1,6 @@
 # rust-cross-compile-x86_64
 
-Docker image for cross-compilation Rust programs for Linux, Windows and macOS.
+[Docker image](https://hub.docker.com/r/agavrilov01/rust-cross-compile-x86_64) for cross-compilation Rust programs for Linux, Windows and macOS.
 
 Following toolchains are installed:
 * x86_64-apple-darwin
