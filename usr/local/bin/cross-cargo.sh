@@ -12,7 +12,6 @@ is_mac_target ()
 }
 
 if is_mac_target "$@"; then
-    # echo "Building for macOS"
     # ensures that the host and target compilers are explicitly set, including using
     # wrappers for clang for the target to pass parameters to clang that help a lot
     # of native code more reliably compile
