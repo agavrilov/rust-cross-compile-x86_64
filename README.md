@@ -27,7 +27,7 @@ Make sure you specified the target you want to build for. For example. to build 
 --target=x86_64-apple-darwin
 ```
 
-There is a convienence [script](cargo-in-container.sh) which wraps this command for you. With this script, the example above will become:
+There is a convienence [script](https://github.com/agavrilov/rust-cross-compile-x86_64/blob/master/cargo-in-container.sh) which wraps this command for you. With this script, the example above will become:
 ```
 ./cargo-in-container.sh --target=x86_64-apple-darwin
 ```
