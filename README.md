@@ -22,12 +22,12 @@ docker run --rm \
     [your Cargo parameters...]
 ```
 
-Make sure you specified the target you want to build for. For example. to build for macOS, specify
+Make sure you specified the target you want to build for. For example, to build for macOS, specify
 ```
 --target=x86_64-apple-darwin
 ```
 
 There is a convienence [script](https://github.com/agavrilov/rust-cross-compile-x86_64/blob/master/cargo-in-container.sh) which wraps this command for you. With this script, the example above will become:
 ```
-./cargo-in-container.sh --target=x86_64-apple-darwin
+./cargo-in-container.sh build --target=x86_64-apple-darwin
 ```
