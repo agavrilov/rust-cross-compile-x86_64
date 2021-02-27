@@ -1,4 +1,4 @@
-FROM agavrilov01/cross-compile-x86_64:sdk-10-15
+FROM agavrilov01/cross-compile-x86_64
 
 ENV RUSTUP_TOOLCHAIN=1.50.0 \
     RUSTUP_HOME=/usr/local/rustup \
