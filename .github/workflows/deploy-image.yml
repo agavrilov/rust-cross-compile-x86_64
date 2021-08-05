@@ -36,7 +36,7 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw,value=latest,enable=${{ endsWith(github.ref, ‘master’) }}
+            type=raw,value=latest,enable=${{ endsWith(github.ref, 'master') }}
             type=ref,event=tag
           flavor: |
             latest=false
