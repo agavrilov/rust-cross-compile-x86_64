@@ -2,7 +2,10 @@ name: Create and publish a Docker image
 
 on:
   push:
+    branches:
+      - master
     tags:
+      - '*'
 
 env:
   REGISTRY: ghcr.io
@@ -11,6 +14,7 @@ env:
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' || github.event_name == 'release'
     permissions:
       contents: read
       packages: write
@@ -32,7 +36,10 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=semver,pattern={{version}}
+            type=raw,value=latest,enable=${{ endsWith(github.ref, ‘master’) }}
+            type=ref,event=tag
+          flavor: |
+            latest=false
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
