@@ -22,10 +22,12 @@ if is_mac_target "$@"; then
     export CPP="mac-cc.sh -E"
 
     # these help resolve issues that can arise with assembly and linking
+    DARWIN_VERSION=21.1
+    ARCH='x86_64'
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/osxcross/lib"
-    export AR="/usr/osxcross/bin/x86_64-apple-darwin15-ar"
-    export RANLIB="/usr/osxcross/bin/x86_64-apple-darwin15-ranlib"
-    export TOOLCHAIN_PREFIX="/usr/osxcross/bin/x86_64-apple-darwin15-"
+    export AR="/usr/osxcross/bin/${ARCH}-apple-darwin${DARWIN_VERSION}-ar"
+    export RANLIB="/usr/osxcross/bin/${ARCH}-apple-darwin${DARWIN_VERSION}-ranlib"
+    export TOOLCHAIN_PREFIX="/usr/osxcross/bin/${ARCH}-apple-darwin${DARWIN_VERSION}-"
 fi
 
 # Allow for cross-compilation of OpenSSL

@@ -1,7 +1,7 @@
 # Change linkers and archivers for cross-compilation
 [target.x86_64-apple-darwin]
 linker = "/usr/local/bin/mac-cc.sh"
-ar = "/usr/osxcross/bin/x86_64-apple-darwin15-ar"
+ar = "/usr/osxcross/bin/x86_64-apple-darwin21.1-ar"
 
 [target.x86_64-pc-windows-gnu]
 linker = "x86_64-w64-mingw32-gcc"

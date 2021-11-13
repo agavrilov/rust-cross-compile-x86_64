@@ -17,7 +17,7 @@ docker run --rm \
     -v cargo_git:/usr/local/cargo/git \
     -v "$(pwd):/work" \
     -w=/work \
-    agavrilov01/rust-cross-compile-x86_64 \
+    ghcr.io/agavrilov/rust-cross-compile-x86_64 \
     cross-cargo.sh \
     [your Cargo parameters...]
 ```
