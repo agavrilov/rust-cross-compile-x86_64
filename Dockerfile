@@ -1,6 +1,6 @@
 FROM agavrilov01/cross-compile-x86_64
 
-ENV RUSTUP_TOOLCHAIN=1.58.1 \
+ENV RUSTUP_TOOLCHAIN=1.59.0 \
     RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH
