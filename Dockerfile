@@ -1,9 +1,9 @@
 FROM agavrilov01/cross-compile-x86_64
 
-ENV RUSTUP_TOOLCHAIN=1.61.0 \
-    RUSTUP_HOME=/usr/local/rustup \
-    CARGO_HOME=/usr/local/cargo \
-    PATH=/usr/local/cargo/bin:$PATH
+ENV RUSTUP_TOOLCHAIN=1.62.0 \
+RUSTUP_HOME=/usr/local/rustup \
+CARGO_HOME=/usr/local/cargo \
+PATH=/usr/local/cargo/bin:$PATH
 
 # Install Rust
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --no-modify-path --profile minimal --default-toolchain $RUSTUP_TOOLCHAIN
