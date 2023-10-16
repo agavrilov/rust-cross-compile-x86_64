@@ -23,9 +23,9 @@ if is_mac_target "$@"; then
 
     # these help resolve issues that can arise with assembly and linking
     export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/osxcross/lib"
-    export AR="/usr/osxcross/bin/x86_64-apple-darwin15-ar"
-    export RANLIB="/usr/osxcross/bin/x86_64-apple-darwin15-ranlib"
-    export TOOLCHAIN_PREFIX="/usr/osxcross/bin/x86_64-apple-darwin15-"
+    export AR="/usr/osxcross/bin/x86_64-apple-darwin19-ar"
+    export RANLIB="/usr/osxcross/bin/x86_64-apple-darwin19-ranlib"
+    export TOOLCHAIN_PREFIX="/usr/osxcross/bin/x86_64-apple-darwin19-"
 fi
 
 # Allow for cross-compilation of OpenSSL
