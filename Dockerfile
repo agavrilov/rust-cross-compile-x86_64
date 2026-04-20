@@ -1,6 +1,6 @@
-FROM agavrilov01/cross-compile-x86_64
+FROM ghcr.io/agavrilov/cross-compile-x86_64:2.0.3
 
-ENV RUSTUP_TOOLCHAIN=1.94.0 \
+ENV RUSTUP_TOOLCHAIN=1.95.0 \
 RUSTUP_HOME=/usr/local/rustup \
 CARGO_HOME=/usr/local/cargo \
 PATH=/usr/local/cargo/bin:$PATH \
